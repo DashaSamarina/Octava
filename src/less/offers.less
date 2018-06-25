@@ -9,7 +9,6 @@
 	border-radius: 10px;
 	height: 420px;
 
-
 	&__first-block {
 		background: linear-gradient(180deg, rgba(255, 81, 88, 0.2) 0%, rgba(255, 108, 114, 0) 60px) 0 0 no-repeat,
 		url('/theme/Octava/images/bg-1.png') 100% 100% no-repeat;
@@ -38,34 +37,74 @@
 
 	&__main {
 		position: relative;
+		line-height: 26px;
 		background: rgba(255, 255, 255, 0.65);
 		height: 320px;
-		padding: 15px 25px 35px;
-		margin: 0 50px;
+
+		&_big {
+
+			padding: 15px 35px 35px;
+			margin: 0 50px;
+			text-align: justify;
+		}
+		&_small {
+			padding: 15px 20px 35px;
+			margin: 0 35px;
+		}
+		ul {
+			margin-bottom: 30px;
+		}
 
 	}
-	
+
 	&__price-label {
-	display: inline-block;
-	position: absolute;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 800;
-	font-size: 14px;
-	text-align: justify;
-	text-transform: uppercase;
-	color: #D36767;
-	right: 20px;
-	bottom: 20px;
 
-	span {
-		font-size: 18px;
+
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 800;
+		font-size: 16px;
+		text-align: justify;
+		text-transform: uppercase;
+		color: #D36767;
+
+
+		&_big {
+			display: inline-block;
+			position: absolute;
+			right: 40px;
+			bottom: 80px;
+		}
+
+		&_small {
+			position: absolute;
+			bottom: 40px;
+
+		}
+
+		span {
+			font-size: 20px;
+		}
+
 	}
 
-}
+	ul {
+		line-height: 30px;
+		font-size: 16px;
+
+		li {
+			padding-left: 20px;
+			background: url('/theme/Octava/images/bullet-image.png') 0 15px no-repeat;
+		}
+	}
+	&__list {
+
+		&_with-text {
+			margin-top: 45px;
+		}
+	}
 
 }
 
 .offers-row {
 	margin-bottom: 30px;
 }
-

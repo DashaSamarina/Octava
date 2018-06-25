@@ -81,25 +81,53 @@ footer {
 }
 .offer__main {
   position: relative;
+  line-height: 26px;
   background: rgba(255, 255, 255, 0.65);
   height: 320px;
-  padding: 15px 25px 35px;
+}
+.offer__main_big {
+  padding: 15px 35px 35px;
   margin: 0 50px;
+  text-align: justify;
+}
+.offer__main_small {
+  padding: 15px 20px 35px;
+  margin: 0 35px;
+}
+.offer__main ul {
+  margin-bottom: 30px;
 }
 .offer__price-label {
-  display: inline-block;
-  position: absolute;
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
-  font-size: 14px;
+  font-size: 16px;
   text-align: justify;
   text-transform: uppercase;
   color: #D36767;
-  right: 20px;
-  bottom: 20px;
+}
+.offer__price-label_big {
+  display: inline-block;
+  position: absolute;
+  right: 40px;
+  bottom: 80px;
+}
+.offer__price-label_small {
+  position: absolute;
+  bottom: 40px;
 }
 .offer__price-label span {
-  font-size: 18px;
+  font-size: 20px;
+}
+.offer ul {
+  line-height: 30px;
+  font-size: 16px;
+}
+.offer ul li {
+  padding-left: 20px;
+  background: url('/theme/Octava/images/bullet-image.png') 0 15px no-repeat;
+}
+.offer__list_with-text {
+  margin-top: 45px;
 }
 .offers-row {
   margin-bottom: 30px;
@@ -113,6 +141,7 @@ h1 {
   line-height: 30px;
   font-size: 32px;
   letter-spacing: 0.07em;
+  margin: 45px 0 25px;
   text-transform: uppercase;
   font-weight: 700;
   max-width: 250px;
