@@ -53,22 +53,23 @@
 			</ul>
 		</navbar>
 	</div>
-	<div class="container-fluid">
-		<div class="row text-center hero-image align-items-center">
-			<div class="col-lg">
-			</div>
-			<div class="col-lg-4 col-sm-12">
-				<h2>Специалист по недвижимости В Омске Светлана Викторовна Ласкина</h2>
-				<p>Оформление недвижимости. Сопровождение сделок. Помощь в оформлении ипотеки, консультационные услуги
-				</p>
-				<button class='btn'><a href="#contact">Записаться на консультацию</a></button>
-			</div>
-			<div class="col-lg">
+	<div class="hello-screen">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 offset-lg-3 col-sm">
+					<div class="hello-screen__main">
+						<h2>Специалист по недвижимости В Омске Светлана Викторовна Ласкина</h2>
+						<p>Оформление недвижимости. Сопровождение сделок. Помощь в оформлении ипотеки, консультационные услуги
+						</p>
+						<button class='btn'><a href="#contact">Записаться на консультацию</a></button>
+					</div>
+
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="container">
+	<div class="container offers">
 		<a href="" name="offers"></a>
 		<h1 name="offers">Услуги</h1>
 		<div class="row offers-row">
@@ -90,10 +91,16 @@
 
 				</div>
 			</div>
-			<div class="col-lg-3">
-				<div class="note">
-					заметка
+			<div class="col-lg-3 g-note">
+				<div class="offer__note">
+					<div class="offer__paragraph">
+						Услуги по желанию клиента могут быть объединены между собой
+					</div>
+					<div class="offer__paragraph">
+						Конечная стомость услуг зависит от сложности ситуации и обсуждается в момент заключения договора
+					</div>
 				</div>
+
 			</div>
 		</div>
 		<div class="row">
@@ -112,7 +119,6 @@
 							<span>от 15 500 РУБ </span>
 						</div>
 					</div>
-
 				</div>
 			</div>
 			<div class="col-lg col-md">
@@ -136,16 +142,17 @@
 
 			</div>
 		</div>
-
+	</div>
+	<div class="container about">
 		<a href="" name="rielt"></a>
 		<h1>О риэлторе</h1>
-		<div class="row about">
+		<div class="row ">
 			<div class="col-lg-4 col-md">
 				<div class="about__photo">
 					<img src="<?php get_theme_url(); ?>/images/photo.png" alt="фото">
 				</div>
 			</div>
-			<div class="col-lg-8 col-md">
+			<div class="col-lg-6 offset-lg-1 col-md">
 				<div class="about__description">
 					Ласкина Светлана Викторовна<br> Я работаю на рынке недвижимости более десяти лет и могу помочь своим клиентам в решении их проблем , связанных с недвижимостью, как в вопросах оформления комплекта документов, так и сопровождения сделки купли –продажи, включая консультационные услуги.
 				</div>
@@ -153,14 +160,21 @@
 		</div>
 		<div class="row about">
 			<div class="col-lg-8 col-md offset-lg-2">
-				<div class="note about__note">
+				<div class="g-note about__note">
 					Рынок недвижимости существует уже несколько десятилетий. Он имеет свою историю , свои правила и свои требования. Только взаимодействуя с ним постоянно, можно эффективно ориентироваться в обстановке на рынке недвижимости
 				</div>
 			</div>
 		</div>
+		
+
+
+
+
+	</div>
+	<div class="container objects">
 		<a href="" name="objects"></a>
 		<h1>Объекты</h1>
-		<div class="row objects">
+		<div class="row ">
 			<div class="col-lg-4 col-md">
 				<div class="objects__card">hello</div>
 			</div>
@@ -184,11 +198,13 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="container contact">
 		<a href="" name="contact"></a>
 		<h1>Контакты</h1>
-		<div class="row contact">
+		<div class="row ">
 			<div class="col-lg-6 col-md">
-				<div class="contact__card">
+				<div class="contact__note g-note">
 					контакты
 				</div>
 			</div>
@@ -198,11 +214,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="row map">
-
-		</div>
+	</div>
+	<div class="container footer">
 		<footer>
-			<div class="row footer">
+			<div class="row ">
 				<div class="col">footer</div>
 			</div>
 		</footer>
