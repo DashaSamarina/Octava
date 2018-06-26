@@ -40,19 +40,21 @@
 </head>
 
 <body>
-	<div class="container">
-		<header>
-			Это хедер сайта
-		</header>
-		<navbar>
-			<ul>
-				<li><a href="#offers">Услуги</a></li>
-				<li><a href="#rielt">О риэлеторе</a></li>
-				<li><a href="#objects">Объекты</a></li>
-				<li><a href="#contact">Контакты</a></li>
-			</ul>
+	<div class="container-fluid">
+	<navbar>
+		<div class="container">
+			
+				<ul>
+					<li><a href="#offers">Услуги</a></li>
+					<li><a href="#rielt">О риэлеторе</a></li>
+					<li><a href="#objects">Объекты</a></li>
+					<li><a href="#contact">Контакты</a></li>
+				</ul>
+			
+		</div>
 		</navbar>
 	</div>
+
 	<div class="hello-screen">
 		<div class="container">
 			<div class="row">
@@ -91,7 +93,7 @@
 
 				</div>
 			</div>
-			<div class="col-lg-3 g-note">
+			<div class="col-lg-3 col-md g-note">
 				<div class="offer__note">
 					<div class="offer__paragraph">
 						Услуги по&nbsp;желанию клиента могут быть объединены между собой
@@ -174,31 +176,66 @@
 		<h1>Объекты</h1>
 		<div class="row ">
 			<div class="col-lg-4 col-md">
-				<div class="objects__card">hello 1</div>
+				<div class="object">
+					<img src="/theme/Octava/images/hero-image.png" alt="">
+					<div class="object__header">ул. Краснознаменная дом 26 к.2</div>
+					<div class="object__text">1-комн.,34 кв.м, 4/9 панель</div>
+					<div class="object__price-label">1 230 тыс. руб</div>
+				</div>
 			</div>
 			<div class="col-lg-4 col-md">
-				<div class="objects__card">hello 2 </div>
+				<div class="object">
+					<img src="/theme/Octava/images/hero-image.png" alt="">
+					<div class="object__header">ул. Краснознаменная дом 26 к.2</div>
+					<div class="object__text">1-комн.,34 кв.м, 4/9 панель. long long text </div>
+					<div class="object__price-label">1 230 тыс. руб</div>
+				</div>
 			</div>
 			<div class="col-lg-4 col-md">
-				<div class="objects__card">hello 3</div>
+				<div class="object">
+					<img src="/theme/Octava/images/hero-image.png" alt="">
+					<div class="object__header">ул. Краснознаменная дом 26 к.2</div>
+					<div class="object__text">1-комн.,34 кв.м, 4/9 панель. long long text </div>
+					<div class="object__price-label">1 230 тыс. руб</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="reviews-image">
+		<div class="container reviews">
+			<h1>Отзывы</h1>
+			<div class="row">
+				<div class="col-lg-6 col-md">
+					<div class="review">
+						<div class="review__header">
+							Владислав K.
+						</div>
+						<div class="review__info">
+							2016 год. Продажа 2-комнатной квартиры на Заозерной
+						</div>
+						<div class="review_text">
+							«Cветлана Викторовна помогала с продажей квартиры и наследством в 2016 году. Было проделано много работы по подготовке документов. Все было сделано профессионально, на все вопросы мы получали развернутые ответы. Спасибо ей за ответственный подход к делу, полученными результатами довольны»
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md">
+					<div class="review">
+						<div class="review__header">
+							Анна Л.
+						</div>
+						<div class="review__info">
+							Апрель 2017 год. Подготовка документов для продажи частного дома
+						</div>
+						<div class="review_text">
+							«Cветлана Викторовна помогала с продажей квартиры и наследством в 2016 году. Было проделано много работы по подготовке документов.»
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="container reviews">
-		<h1>Отзывы</h1>
-		<div class="row">
-			<div class="col-lg-6 col-md">
-				<div class="reviews__card">
-					отзыв 1
-				</div>
-			</div>
-			<div class="col-lg-6 col-md">
-				<div class="reviews__card">
-					отзыв 2
-				</div>
-			</div>
-		</div>
-	</div>
+
 
 	<div class="container contact">
 		<a href="" name="contact"></a>

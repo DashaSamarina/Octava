@@ -66,9 +66,40 @@ footer {
 .objects {
   margin-top: 60px;
 }
-.objects__card {
-  height: 250px;
-  background-color: antiquewhite;
+.object {
+  position: relative;
+  height: 370px;
+  box-shadow: 0px 0px 0px 2px #FAA2A2 inset;
+  border-radius: 10px;
+}
+.object img {
+  height: 240px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.object__header {
+  font-style: 'Open Sans';
+  font-weight: 700;
+  line-height: 16px;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 15px 15px 5px;
+}
+.object__text {
+  line-height: 18px;
+  padding: 0 15px 5px;
+  max-height: 33px;
+}
+.object__price-label {
+  position: absolute;
+  left: 15px;
+  bottom: 20px;
+  font-weight: 700;
+  Font-Size: 20px;
+  Line-Height: 27px;
+  color: #D36767;
 }
 .offers {
   margin-bottom: 65px;
@@ -161,9 +192,27 @@ footer {
 .offers-row {
   margin-bottom: 30px;
 }
-.reviews__card {
+.reviews-image {
+  background: url('/theme/Octava/images/bg-reviews.png') center 0 no-repeat;
+  height: 480px;
+}
+.review {
   height: 300px;
   border: 2px solid #FAA2A2;
+  border-radius: 10px;
+  padding: 25px;
+  background-color: white;
+}
+.review__header {
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  line-height: 20px;
+}
+.review__info {
+  font-size: 17px;
+  line-height: 22px;
+  padding-bottom: 15px;
 }
 .hello-screen {
   background: url('/theme/Octava/images/hero-image.png') center center no-repeat;
@@ -183,7 +232,7 @@ h1 {
   line-height: 30px;
   font-size: 32px;
   letter-spacing: 0.07em;
-  margin: 55px 0 35px;
+  margin: 65px 0 35px;
   text-transform: uppercase;
   font-weight: 700;
   max-width: 250px;
