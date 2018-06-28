@@ -70,8 +70,8 @@
 		<a href="" name="offers"></a>
 		<h1 name="offers">Услуги</h1>
 		<div class="row offers-row">
-			<div class="col-lg-9 col-md">
-				<div class="offer offer__first-block">
+			<div class="col-lg-9 col-md-12">
+				<div class="offer offer__first-block mobile-padding">
 					<div class="offer__header">
 						Подготовка комплекта документов
 					</div>
@@ -88,7 +88,7 @@
 
 				</div>
 			</div>
-			<div class="col-lg-3 col-md g-note">
+			<div class="col-lg-3 col-md-12">
 				<div class="offer__note">
 					<div class="offer__paragraph">
 						Услуги по&nbsp;желанию клиента могут быть объединены между собой
@@ -102,7 +102,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg col-md">
+			<div class="col-lg col-md-12">
 				<div class="offer offer__second-block">
 					<div class="offer__header">
 						Сопровождение сделки купли-продажи
@@ -119,7 +119,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg col-md">
+			<div class="col-lg col-md-12">
 				<div class="offer offer__third-block">
 					<div class="offer__header">
 						Консультационные услуги
@@ -235,10 +235,10 @@
 		<h1>Контакты</h1>
 		<div class="row ">
 			<div class="col-lg-6 col-md">
-				<div class="contact__note g-note">
+				<div class="g-note contact__info">
 					<ul>
 						<li class="contact__phone">8 (905) 960-98-62</li>
-						<li class="contact__address"> г. Омск, ул. Тарская 140, каб. 703</li>
+						<li class="contact__address">      г. Омск, ул. Тарская 140, каб. 703</li>
 						<li class="contact__email">lanalaskina@yandex.ru</li>
 					</ul>
 				</div>
@@ -250,6 +250,10 @@
 			</div>
 		</div>
 	</div>
+	<div class="container map">
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A734127cf54acc7b5730ac9018ee556b9143891d7073246c30c84b4aa322a026e&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+	</div>
+	
 	<div class="container footer">
 		<footer>
 			<div class="row ">

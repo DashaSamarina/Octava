@@ -5,8 +5,8 @@ $(window).ready(function () {
 		opacity: "show"
 	}, 800);
 
-	$(".button").hover(function () {
-		$(this).animate(
-			backgroundColor: "#0CF", 500);
-	})
+	//$(".button").hover(function () {
+		//$(this).animate(
+		//	backgroundColor: "#0CF", 500);
+	//})
 });
