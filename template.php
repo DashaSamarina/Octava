@@ -1,4 +1,4 @@
-<?php if(!defined('IN_GS')){ die('you cannot load this page directly.'); }
+<?php if(!defined('IN_GS')){ die('you cannot load this page directly :/'); }
 /****************************************************
 *
 * @File: 		template.php
@@ -20,15 +20,15 @@
 		<?php get_page_clean_title(); ?> &mdash;
 		<?php get_site_name(); ?>
 	</title>
+
 	<!-- Подключение JQuery -->
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-
-	<!-- Подключение css файлов -->
-	<link href="<?php get_theme_url(); ?>/css/reset.min.css" rel="stylesheet">
 
 	<!-- Подключение bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
+	<!-- Подключение css файлов -->
+	<link href="<?php get_theme_url(); ?>/css/reset.min.css" rel="stylesheet">
 	<link href="<?php get_theme_url(); ?>/css/style.css" rel="stylesheet">
 
 	<!-- Подключение шрифтов из Google Fonts https://fonts.google.com/ -->
@@ -36,25 +36,27 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<!-- Подключение js файлов -->
+	<script src="<?php get_theme_url(); ?>/js/script.js" type='text/javascript'></script>
+
 	<?php get_header();?>
 </head>
 
 <body>
 	<div class="container-fluid">
-	<navbar>
 		<div class="container">
-			
-				<ul>
-					<li><a href="#offers">Услуги</a></li>
-					<li><a href="#rielt">О риэлеторе</a></li>
-					<li><a href="#objects">Объекты</a></li>
-					<li><a href="#contact">Контакты</a></li>
-				</ul>
-			
+			<div class="row">
+				<navbar>
+					<ul>
+						<li><a href="#offers">Услуги</a></li>
+						<li><a href="#rielt">О риэлеторе</a></li>
+						<li><a href="#objects">Объекты</a></li>
+						<li><a href="#contact">Контакты</a></li>
+					</ul>
+				</navbar>
+			</div>
 		</div>
-		</navbar>
 	</div>
-
 	<div class="hello-screen">
 		<div class="container">
 			<div class="row">
@@ -70,7 +72,6 @@
 			</div>
 		</div>
 	</div>
-
 	<div class="container offers">
 		<a href="" name="offers"></a>
 		<h1 name="offers">Услуги</h1>
@@ -235,20 +236,22 @@
 			</div>
 		</div>
 	</div>
-
-
 	<div class="container contact">
 		<a href="" name="contact"></a>
 		<h1>Контакты</h1>
 		<div class="row ">
 			<div class="col-lg-6 col-md">
 				<div class="contact__note g-note">
-					контакты
+					<ul>
+						<li class="contact__phone">8 (905) 960-98-62</li>
+						<li class="contact__address"> г. Омск, ул. Тарская 140, каб. 703</li>
+						<li class="contact__email">lanalaskina@yandex.ru</li>
+					</ul>
 				</div>
 			</div>
 			<div class="col-lg-6 col-md">
 				<div class=contact__note>
-					примечание
+					Задать свой вопрос вы можете как по телефону, так и&nbsp;в&nbsp;офисе агенства по&nbsp;предварительной записи. Я&nbsp;проконсультирую и&nbsp;отвечу на&nbsp;интересующие вопросы. Мы обговорим список требуемых услуг и&nbsp;заключим договор на&nbsp;их&nbsp;оказание. Звоните!
 				</div>
 			</div>
 		</div>

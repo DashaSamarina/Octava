@@ -1,10 +1,19 @@
 // out: null,  main: Z:/home/octava.ru/www/theme/Octava/css/style.less
 .hello-screen {
+	position: relative;
 	background: url('/theme/Octava/images/hero-image.png') center center no-repeat;
 
-	-o-background-size: 100%;
-	-moz-background-size: 100%;
-	background-size: 100%;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	height: 100vh;
 
-	height: 800px;
+
+	&__main {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		text-align: center;
+		height: 200px;
+	}
 }

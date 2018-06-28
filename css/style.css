@@ -26,14 +26,25 @@
   margin-bottom: 65px;
 }
 .contact__note {
+  text-align: left;
   border: 2px solid #FAA2A2;
   height: 200px;
+  padding: 30px;
+  line-height: 27px;
+  font-weight: 500;
+  border-radius: 10px;
+  text-align: justify;
 }
 .contact__card {
   background-color: #FAA2A2;
   color: white;
+  font-size: 20px;
+  font-weight: 800;
   height: 200px;
   border-width: 5px;
+}
+li .contact__address::before {
+  background: url('/theme/Octava/images/icon-geo.png') 0 0 no-repeat;
 }
 header {
   height: 80px;
@@ -46,7 +57,6 @@ navbar {
 }
 navbar ul {
   line-height: 50px;
-  padding-left: 15px;
 }
 navbar ul li {
   display: inline-block;
@@ -215,17 +225,25 @@ footer {
   padding-bottom: 15px;
 }
 .hello-screen {
+  position: relative;
   background: url('/theme/Octava/images/hero-image.png') center center no-repeat;
-  -o-background-size: 100%;
-  -moz-background-size: 100%;
-  background-size: 100%;
-  height: 800px;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+.hello-screen__main {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  height: 200px;
 }
 body {
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 26px;
-  font-family: 'Open Sans', sans-serif;
-  color: #333;
+  color: #333333;
 }
 h1 {
   font-family: 'Open Sans', serif;
@@ -239,7 +257,6 @@ h1 {
 }
 h1::after {
   /* Градиент */
-  background: #ffffff;
   background: -mozlinear-gradient(180deg, rgba(255, 81, 88, 0.5) 0%, rgba(255, 108, 114, 0) 100%);
   background: -webkitlinear-gradient(180deg, rgba(255, 81, 88, 0.5) 0%, rgba(255, 108, 114, 0) 100%);
   background: -webkit-linear-gradient(180deg, rgba(255, 81, 88, 0.5) 0%, rgba(255, 108, 114, 0) 100%);
@@ -262,7 +279,7 @@ h2 {
   color: #FFFFFF;
 }
 .g-note {
-  background-color: #FA9899;
+  background-color: #fa9899;
   color: white;
   font-size: 14px;
   font-weight: 600;
