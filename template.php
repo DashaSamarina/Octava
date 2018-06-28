@@ -28,7 +28,6 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
 	<!-- Подключение css файлов -->
-	<link href="<?php get_theme_url(); ?>/css/reset.min.css" rel="stylesheet">
 	<link href="<?php get_theme_url(); ?>/css/style.css" rel="stylesheet">
 
 	<!-- Подключение шрифтов из Google Fonts https://fonts.google.com/ -->
@@ -43,9 +42,9 @@
 </head>
 
 <body>
-	<div class="container-fluid">
-		<div class="container">
-			<div class="row">
+	<div class="container-fluid hello-screen">
+		<div class="row no-gutters">
+			<div class="col-lg ">
 				<navbar>
 					<ul>
 						<li><a href="#offers">Услуги</a></li>
@@ -56,18 +55,13 @@
 				</navbar>
 			</div>
 		</div>
-	</div>
-	<div class="hello-screen">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 offset-lg-3 col-sm">
-					<div class="hello-screen__main">
-						<h2>Специалист по недвижимости В Омске Светлана Викторовна Ласкина</h2>
-						<p>Оформление недвижимости. Сопровождение сделок. Помощь в оформлении ипотеки, консультационные услуги
-						</p>
-						<button class='btn'><a href="#contact">Записаться на консультацию</a></button>
-					</div>
-
+				<div class="col-lg-4 col-lg-offset-0 hello-screen__main">
+					<h2>Специалист по недвижимости в&nbsp;Омске Светлана Викторовна Ласкина</h2>
+					<p>Оформление недвижимости. Сопровождение сделок. Помощь в&nbsp;оформлении ипотеки, консультационные услуги
+					</p>
+					<a href="#contact"><button class="button">Записаться на консультацию</button></a>
 				</div>
 			</div>
 		</div>
