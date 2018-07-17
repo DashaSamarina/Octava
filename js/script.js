@@ -9,4 +9,9 @@ $(window).ready(function () {
 		//$(this).animate(
 		//	backgroundColor: "#0CF", 500);
 	//})
+	
+	//$(window).scroll(function(){
+		//if()
+    // alert("Вы прокрутили содержимое hello-screen.");
+  // });
 });
