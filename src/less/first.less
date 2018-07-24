@@ -7,12 +7,12 @@
 }
 
 .first-bg {
-	background: url('/theme/Octava/images/hero-image.png') center center no-repeat;
+	background: url('/theme/Octava/images/hero-image.jpg') center center no-repeat,
+	rgba(0, 0, 0, .5);
 	-o-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	height: 100vh;
-
 	&__main {
 		position: absolute;
 		left: 50%;
@@ -25,7 +25,7 @@
 		font-family: @header-font-family;
 		color: @inverse-font-color;
 		line-height: 40px;
-		font-size: 32px;
+		font-size: 36px;
 		margin-bottom: 8px;
 		text-transform: uppercase;
 	}
@@ -41,24 +41,25 @@
 		.button-gradient();
 		border-radius: 5px;
 		height: 50px;
-		width: 400px;
 		padding: 0 20px;
 		text-transform: uppercase;
 		line-height: 50px;
 		font-weight: 700;
 		letter-spacing: 0.05em;
-		font-size: 17px;
+		font-size: 15px;
 		box-shadow: none;
 		border: none;
 		color: @inverse-font-color;
 		text-decoration: none;
 		cursor: pointer;
+		max-width: 400px;
 	}
 	&__button-link {
 		color: @inverse-font-color;
 		text-decoration: none;
 		&:hover {
 			color: @inverse-font-color;
+			text-decoration: none;
 		}
 	}
 }
@@ -78,14 +79,35 @@
 		letter-spacing: 0.07em;
 		text-transform: uppercase;
 		padding-right: 25px;
+		
+		&_hiding {
+			display: none;
+		}
 	}
 	&__link {
 		position: relative;
 		text-decoration: none;
 		color: @inverse-font-color;
 		&:hover {
-			text-decoration: none!important;
+			text-decoration: none !important;
 			color: @inverse-font-color;
+		}
+	}
+}
+
+@media (min-width: 500px) {
+	.navbar {
+		&__list-item {
+			&_hiding {
+				display: inline-block;
+			}
+
+		}
+	}
+	
+	.first-bg {
+		&__button {
+			font-size: 17px;
 		}
 	}
 }

@@ -205,7 +205,7 @@ footer {
   font-weight: 700;
   Font-Size: 20px;
   Line-Height: 27px;
-  color: #983446;
+  color: #d36767;
 }
 .offer {
   margin-bottom: 60px;
@@ -370,7 +370,7 @@ footer {
   }
 }
 .first-bg {
-  background: url('/theme/Octava/images/hero-image.png') center center no-repeat;
+  background: url('/theme/Octava/images/hero-image.jpg') center center no-repeat, rgba(0, 0, 0, 0.5);
   -o-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -387,7 +387,7 @@ footer {
   font-family: 'Open Sans Condensed', sans-serif;
   color: #ffffff;
   line-height: 40px;
-  font-size: 32px;
+  font-size: 36px;
   margin-bottom: 8px;
   text-transform: uppercase;
 }
@@ -405,18 +405,18 @@ footer {
   background: linear-gradient(180deg, #e56262 0%, #983446 100%);
   border-radius: 5px;
   height: 50px;
-  width: 400px;
   padding: 0 20px;
   text-transform: uppercase;
   line-height: 50px;
   font-weight: 700;
   letter-spacing: 0.05em;
-  font-size: 17px;
+  font-size: 15px;
   box-shadow: none;
   border: none;
   color: #ffffff;
   text-decoration: none;
   cursor: pointer;
+  max-width: 400px;
 }
 .first-bg__button-link {
   color: #ffffff;
@@ -424,6 +424,7 @@ footer {
 }
 .first-bg__button-link:hover {
   color: #ffffff;
+  text-decoration: none;
 }
 .navbar {
   display: block;
@@ -440,14 +441,25 @@ footer {
   text-transform: uppercase;
   padding-right: 25px;
 }
+.navbar__list-item_hiding {
+  display: none;
+}
 .navbar__link {
   position: relative;
   text-decoration: none;
   color: #ffffff;
 }
 .navbar__link:hover {
-  text-decoration: none!important;
+  text-decoration: none !important;
   color: #ffffff;
+}
+@media (min-width: 500px) {
+  .navbar__list-item_hiding {
+    display: inline-block;
+  }
+  .first-bg__button {
+    font-size: 17px;
+  }
 }
 @media (min-width: 992px) {
   .mobile-margin {

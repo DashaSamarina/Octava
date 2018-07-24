@@ -46,9 +46,9 @@
 				<div class="row">
 					<div class="col-lg">
 						<ul class="navbar__menu">
-							<li class="navbar__list-item"><a href="#offer" class="navbar__link">Услуги</a></li>
-							<li class="navbar__list-item"><a href="#about" class="navbar__link">О риэлторе</a></li>
-							<li class="navbar__list-item"><a href="#objects" class="navbar__link">Объекты</a></li>
+							<li class="navbar__list-item"><a href="#offer" class="navbar__link ">Услуги</a></li>
+							<li class="navbar__list-item navbar__list-item_hiding"><a href="#about" class="navbar__link">О риэлторе</a></li>
+							<li class="navbar__list-item navbar__list-item_hiding"><a href="#objects" class="navbar__link">Объекты</a></li>
 							<li class="navbar__list-item"><a href="#contact" class="navbar__link">Контакты</a></li>
 						</ul>
 					</div>
@@ -57,7 +57,7 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-sm-8 col-lg-4 first-bg__main">
+				<div class="col-12 col-sm-10 col-lg-4 first-bg__main">
 					<div class="first-bg__header">
 						Специалист по недвижимости в&nbsp;Омске Светлана Викторовна Ласкина
 					</div>
@@ -167,7 +167,7 @@
 		<a href="" name="objects"></a>
 		<h1>Объекты</h1>
 		<div class="row ">
-			<div class="col-12 col-lg-4">
+			<div class="col-12 col-lg-6">
 				<div class="object">
 					<img src="/theme/Octava/images/object_1.jpg" alt="">
 					<div class="object__header">ул. Краснознаменная дом 26 к.2</div>
@@ -175,20 +175,12 @@
 					<div class="object__price-label">1 230 тыс. руб</div>
 				</div>
 			</div>
-			<div class="col-12 col-lg-4">
+			<div class="col-12 col-lg-6">
 				<div class="object">
-					<img src="/theme/Octava/images/hero-image.png" alt="">
-					<div class="object__header">ул. Бульварная д. 4</div>
-					<div class="object__text">3-комн.,56 кв.м. 2/5 кирпич, </div>
-					<div class="object__price-label">1 795 тыс. руб. ТОРГ.</div>
-				</div>
-			</div>
-			<div class="col-12 col-lg-4">
-				<div class="object">
-					<img src="/theme/Octava/images/hero-image.png" alt="">
-					<div class="object__header">ул. Краснознаменная дом 26 к.2</div>
-					<div class="object__text">1-комн.,34 кв.м, 4/9 панель. long long text </div>
-					<div class="object__price-label">1 230 тыс. руб</div>
+					<img src="/theme/Octava/images/object_2.jpg" alt="">
+					<div class="object__header">ул. 2-я Путевая</div>
+					<div class="object__text">4-х комнатный частный дом, 78 кв.м, 5 соток земли, материал: рубленный </div>
+					<div class="object__price-label">1825 тыс. руб.</div>
 				</div>
 			</div>
 
