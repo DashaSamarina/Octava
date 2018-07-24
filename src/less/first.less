@@ -1,0 +1,91 @@
+// out: null,  main: Z:/home/octava.ru/www/theme/Octava/css/style.less
+.button-gradient() {
+	background: -webkit-linear-gradient(180deg, #E56262 0%, #983446 100%);
+	background: -o-linear-gradient(180deg, #E56262 0%, #983446 100%);
+	background: -ms-linear-gradient(180deg, #E56262 0%, #983446 100%);
+	background: linear-gradient(180deg, #E56262 0%, #983446 100%);
+}
+
+.first-bg {
+	background: url('/theme/Octava/images/hero-image.png') center center no-repeat;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	height: 100vh;
+
+	&__main {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+
+	&__header {
+		font-family: @header-font-family;
+		color: @inverse-font-color;
+		line-height: 40px;
+		font-size: 32px;
+		margin-bottom: 8px;
+		text-transform: uppercase;
+	}
+	&__info {
+		font-size: 18px;
+		line-height: 24px;
+		color: @inverse-font-color;
+		margin-bottom: 30px;
+	}
+
+	&__button {
+		margin: 0 auto;
+		.button-gradient();
+		border-radius: 5px;
+		height: 50px;
+		width: 400px;
+		padding: 0 20px;
+		text-transform: uppercase;
+		line-height: 50px;
+		font-weight: 700;
+		letter-spacing: 0.05em;
+		font-size: 17px;
+		box-shadow: none;
+		border: none;
+		color: @inverse-font-color;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	&__button-link {
+		color: @inverse-font-color;
+		text-decoration: none;
+		&:hover {
+			color: @inverse-font-color;
+		}
+	}
+}
+
+
+.navbar {
+	display: block;
+	background-color: rgba(0, 0, 0, 0.3);
+	width: inherit;
+	padding-left: 15px;
+	text-align: center;
+
+	&__list-item {
+		display: inline-block;
+		font-size: 14px;
+		font-weight: 700;
+		letter-spacing: 0.07em;
+		text-transform: uppercase;
+		padding-right: 25px;
+	}
+	&__link {
+		position: relative;
+		text-decoration: none;
+		color: @inverse-font-color;
+		&:hover {
+			text-decoration: none!important;
+			color: @inverse-font-color;
+		}
+	}
+}

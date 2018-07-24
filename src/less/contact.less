@@ -1,53 +1,80 @@
 // out: null,  main: Z:/home/octava.ru/www/theme/Octava/css/style.less
 .contact {
 	margin-bottom: 65px;
-	&__address {}
 	min-height: 200px;
-}
 
-.contact__note {
-	border: 2px solid #FAA2A2;
-	padding: 30px;
-	line-height: 27px;
-	font-weight: 700;
-	border-radius: 10px;
-	text-align: justify;
-}
+	&__note {
+		border: 2px solid @primary-light-color;
+		padding: 30px;
+		line-height: 27px;
+		font-weight: 700;
+		border-radius: 10px;
+		text-align: justify;
+	}
 
-.contact__info {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	min-height: 200px;
-	text-align: left;
-	font-size: 19px;
-    letter-spacing: 0.05em;
-
-	ul {
+	&__info {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		font-size: 19px;
+		letter-spacing: 0.05em;
+		background-color: #FAA2A2;
+		color: white;
+		border-radius: 10px;
+		font-size: 20px;
+		font-weight: 700;
+		border-width: 5px;
+		padding: 40px;
+		
+		&_margin{
+			margin-bottom: 40px;
+		}
+	}
+	&__list {
 		list-style: none;
 		margin-left: -10px;
+
+		&-item {
+			padding-left: 35px;
+			padding-bottom: 15px;
+			&_phone {
+				background: url('/theme/Octava/images/icon-phone.png') 0 0 no-repeat;
+			}
+			&_address {
+				background: url('/theme/Octava/images/icon-geo.png') 0 0 no-repeat;
+			}
+			&_email {
+				background: url('/theme/Octava/images/icon-mail.png') 0 5px no-repeat;
+				padding-bottom: 0;
+			}
+		}
 	}
-	li {
-		padding-left: 35px;
-		padding-bottom: 15px;
-		&:nth-child(1) {
-			background: url('/theme/Octava/images/icon-phone.png') 0 0 no-repeat;
-		}
-		&:nth-child(2) {
-			background: url('/theme/Octava/images/icon-geo.png') 0 0 no-repeat;
-		}
-		&:nth-child(3) {
-			background: url('/theme/Octava/images/icon-mail.png') 0 5px no-repeat;
-			padding-bottom: 0;
-		}
-	}
+
 }
 
-.contact__card {
-	background-color: #FAA2A2;
-	color: white;
-	font-size: 18px;
-	font-weight: 800;
-	height: 200px;
-	border-width: 5px;
+@media (min-width: 992px) {
+	.contact {
+		&__info {
+			height: 250px;
+		}
+		
+		&__note {
+			height: 250px;
+		}
+			}
+
+}
+
+@media (min-width: 1200px) {
+	.contact {
+		&__info {
+			max-height: 220px;
+		}
+		
+		&__note {
+			max-height: 220px;
+		}
+		
+	}
+
 }

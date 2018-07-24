@@ -1,28 +1,52 @@
 // out: null,  main: Z:/home/octava.ru/www/theme/Octava/css/style.less
+.reviews-bg {
+	background: url('/theme/Octava/images/bg-reviews.png') 0 center no-repeat;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	padding-bottom: 80px;
 
-.reviews-image{
-	background: url('/theme/Octava/images/bg-reviews.png') center 0 no-repeat;
-	height: 480px;
 }
-.review{
-	height: 300px;
+
+.review {
 	border: 2px solid #FAA2A2;
 	border-radius: 10px;
 	padding: 25px;
 	background-color: white;
-	
-	&__header{
+	margin-bottom: 40px;
+	padding: 40px 20px;
+
+	&_margin {
+		margin-bottom: 40px;
+	}
+
+	&__header {
 		font-weight: 700;
 		text-transform: uppercase;
 		padding-bottom: 8px;
 		line-height: 20px;
 	}
-	&__info{
+	&__info {
 		font-size: 17px;
 		line-height: 22px;
 		padding-bottom: 15px;
 	}
-	&__text{
-		
+	&__text {}
+}
+
+
+@media (min-width: 992px) {
+	.about {
+		&__description {
+			padding: 30px 40px 165px 45px;
+		}
 	}
+	.review {
+		min-height: 350px;
+		&_margin {
+			margin-bottom: 0;
+		}
+	}
+
 }

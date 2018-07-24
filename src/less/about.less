@@ -1,29 +1,57 @@
 // out: null,  main: Z:/home/octava.ru/www/theme/Octava/css/style.less
-.about-image {
-	background-image: url('/theme/Octava/images/bg-rielt.png');
+.about-bg {
+	background: url('/theme/Octava/images/bg-rielt.png') 0 center no-repeat;
 	background-size: cover;
-	height: 785px;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	padding-bottom: 70px;
 }
 
 .about {
-	height: inherit;
-
 	&__description {
 		background: rgba(255, 255, 255, 0.5);
-		padding: 30px 40px 0 45px;
-		height: 360px;
+		padding: 30px 40px 20px 45px;
 		text-align: justify;
+		margin-bottom: 40px;
 		strong {
 			text-transform: uppercase;
 			font-weight: 700;
 		}
 	}
 	&__note {
-		padding: 20px 10px;
-		height: 120px;
+		padding: 40px 20px;
+		background-color: @primary-light-color;
+		border-radius: 10px;
+		text-align: center;
+		color: @inverse-font-color;
+
 	}
-	img{
-		width: 100% !important;
-		margin: 0 auto;
+	&__image {
+		margin-bottom: 40px;
+		img {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+		}
 	}
+
+}
+
+@media (min-width: 768px) {
+	.about {
+		&__description {
+			padding: 15px 20px 50px;
+		}
+	}
+
+}
+
+@media (min-width: 992px) {
+	.about {
+		&__description {
+			padding: 30px 40px 165px 45px;
+		}
+	}
+
 }

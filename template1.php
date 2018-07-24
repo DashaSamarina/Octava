@@ -96,7 +96,6 @@
 					</div>
 				</div>
 			</div>
-			<div class="w-100"></div>
 			<div class="col-lg-6 col-md-12">
 				<div class="offer offer__second-block mobile-margin">
 					<div class="offer__header">
